@@ -1,0 +1,64 @@
+import java.util.LinkedList;
+
+public class AssociationList implements Map{
+		private LinkedList keysList;
+		private LinkedList values;
+	public AssociationList(){
+		LinkedList keysList = new LinkedList();
+		LinkedList values = new LinkedList();
+	}
+	@Override
+	public void put(Object k, Object v) {
+		if(keysList.isEmpty()){
+			return;
+		}
+		else{
+			if(keysList.contains(k)){
+				return;
+			}
+			else{
+				
+			}
+		}
+		
+	}
+
+	@Override
+	public Object remove(Object k) {
+		if(values.contains(k)){
+			
+		}
+		return k;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean containsKey(Object k) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Object get(Object k) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public LinkedList keys() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public LinkedList values() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
